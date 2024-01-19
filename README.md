@@ -1,0 +1,2 @@
+# clans
+QuakeWorld Clans
