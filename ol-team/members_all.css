@@ -1,0 +1,99 @@
+BODY
+{
+
+	font-family: Verdana, Sans-Serif;
+	margin-left: 30px;
+	margin-top: 16px;
+	background-repeat: no-repeat;
+	background-color: #301B18;
+	background-image: url(gfx/bg.gif);
+	background-position: 8px 125px;
+	overflow:hidden;
+	
+}
+
+td
+{
+	background-color: #483F56;
+	color: #83737D;
+	font-size: 11px;
+	font-weight: bold;	
+}
+
+.player
+{
+	background-color: #000000;
+	color: #BA925F;
+	font-size: 12px;
+
+}
+
+
+.blank
+{
+	background-color: Transparent;
+	color: #83737D;
+	font-size: 12px;
+}
+
+.inactive
+{
+	background-color: Transparent;
+	color: red;
+	font-size: 12px;
+}
+
+.pfield
+{
+	color: #000000;
+	
+}
+
+.pdescr
+{
+	font-weight: normal;
+}	
+
+.item
+{
+	color: #BA925F;
+	font-size: 12px;
+}
+
+.date
+{
+	color: #BA925F;
+	font-weight: normal;
+}
+
+.dots
+{
+	color: #BA925F;
+	font-weight: bold;
+}
+.pos
+{
+	color: #83737D;
+}
+
+
+a
+{
+	font-weight: normal;
+	text-decoration: none;
+	color: #678D82;
+}
+
+.digit
+{
+	color: #81413F;
+}
+
+
+
+a:hover
+{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+}

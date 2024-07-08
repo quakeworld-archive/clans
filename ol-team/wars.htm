@@ -1,0 +1,534 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" href="wars.css" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Generator" content="notepad">
+		<meta name="Author" content="Michal Gwozdek - mg@post.pl">
+	</HEAD>
+	<BODY>
+		<div id="staticbuttons" style="position:absolute;">
+			<a href="javascript:" onmouseover="myspeed=-thespeed" onmouseout="myspeed=0"><span class="nav"><img src="gfx/up.gif" border="0"></span></a><br><br><br><br><br>
+			<a href="javascript:" onmouseover="myspeed=thespeed" onmouseout="myspeed=0"><span class="nav"><img src="gfx/down.gif" border="0"></span></a>
+		</div>
+
+		<script>
+			var Hoffset=102
+			var Voffset=160
+			var thespeed=4
+
+			var ieNOTopera=document.all&&navigator.userAgent.indexOf("Opera")==-1
+			var myspeed=0
+
+			var ieHoffset_extra=document.all? 1 : 0
+			var cross_obj=document.all? document.all.staticbuttons : document.getElementById? document.getElementById("staticbuttons") : document.staticbuttons
+
+			function iecompattest()
+			{
+				return (document.compatMode!="BackCompat")? document.documentElement : document.body
+			}
+
+			function positionit()
+			{
+				var dsocleft=document.all? iecompattest().scrollLeft : pageXOffset
+				var dsoctop=document.all? iecompattest().scrollTop : pageYOffset
+				var window_width=ieNOTopera? iecompattest().clientWidth+ieHoffset_extra : window.innerWidth+ieHoffset_extra
+				var window_height=ieNOTopera? iecompattest().clientHeight : window.innerHeight
+
+				if (document.all||document.getElementById)
+				{
+					cross_obj.style.left=parseInt(dsocleft)+parseInt(window_width)-Hoffset+"px"
+					cross_obj.style.top=dsoctop+parseInt(window_height)-Voffset+"px"
+				}
+				else if (document.layers)
+				{
+					cross_obj.left=dsocleft+window_width-Hoffset
+					cross_obj.top=dsoctop+window_height-Voffset
+				}
+			}
+
+			function scrollwindow()
+			{
+				window.scrollBy(0,myspeed)
+			}
+
+			function initializeIT()
+			{
+				positionit()
+				if (myspeed!=0)
+				{
+					scrollwindow()
+				}
+			}
+
+			if (document.all||document.getElementById||document.layers)
+			setInterval("initializeIT()",20)
+
+		</script>
+
+		
+<img src="gfx/wars.gif" border="0" align="top"><br><br>
+
+
+
+<table border="0" cellpadding="2" cellspacing="2" width="300">
+
+
+<tr>
+	<td width="100" class="player">
+H
+	</td>
+	<td width="40"class="player">
+2:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+5 grudzien 1999
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+TEC
+	</td>
+	<td width="40"class="player">
+0:2
+	</td>
+	<td width="160"class="defeat">
+DEFEAT
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+3 grudzien 1999
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+DC
+	</td>
+	<td width="40"class="player">
+0:2
+	</td>
+	<td width="160"class="defeat">
+DEFEAT
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+19 marzec 1999
+	</td>
+
+</tr>
+<tr>
+	<td width="100" class="player">
+DC
+	</td>
+	<td width="40"class="player">
+2:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+3 luty 1999
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+KSO
+	</td>
+	<td width="40"class="player">
+3:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+6 sierpien 1998
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+BOH
+	</td>
+	<td width="40"class="player">
+0:2
+	</td>
+	<td width="160"class="defeat">
+DEFEAT
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+26 kwiecien 1998
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+SOTH
+	</td>
+	<td width="40"class="player">
+2:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+25 kwiecien 1998
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+BIO
+	</td>
+	<td width="40"class="player">
+2:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+21 kwiecien 1998
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+ORMO
+	</td>
+	<td width="40"class="player">
+???
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+19 kwiecien 1998
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+DFC
+	</td>
+	<td width="40"class="player">
+2:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+18 kwiecien 1998
+	</td>
+</tr>
+<tr>
+	<td class="pfield">
+Opis >>
+	</td>
+	<td class="pdescr" colspan="2">
+106:-1, 102:9
+	</td>
+</tr>
+
+<tr>
+	<td width="100" class="player">
+JF
+	</td>
+	<td width="40"class="player">
+1:1
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+14 kwiecien 1998
+	</td>
+</tr>
+<tr>
+	<td class="pfield">
+Opis >>
+	</td>
+	<td class="pdescr" colspan="2">
+55:41, 73:86
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+IM
+	</td>
+	<td width="40"class="player">
+0:2
+	</td>
+	<td width="160"class="defeat">
+DEFEAT
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+4 kwiecien 1998
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+D2
+	</td>
+	<td width="40"class="player">
+1:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+Opis >>
+	</td>
+	<td class="pdescr" colspan="2">
+HPB, 3on3, 65:35
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+TFHF
+	</td>
+	<td width="40"class="player">
+1:1
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+29 marzec 1998
+	</td>
+</tr>
+<tr>
+	<td class="pfield">
+Opis >>
+	</td>
+	<td class="pdescr" colspan="2">
+42:48, 59:32
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+FX
+	</td>
+	<td width="40"class="player">
+0:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+27 marzec 1998
+	</td>
+</tr>
+<tr>
+	<td class="pfield">
+Opis >>
+	</td>
+	<td class="pdescr" colspan="2">
+walkover
+	</td>
+</tr>
+
+<tr>
+	<td width="100" class="player">
+SMW
+	</td>
+	<td width="40"class="player">
+2:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+22 marzec 1998
+	</td>
+</tr>
+
+<tr>
+	<td width="100" class="player">
+SMW
+	</td>
+	<td width="40"class="player">
+1:1
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+14 marzec 1998
+	</td>
+</tr>
+<tr>
+	<td class="pfield">
+Opis >>
+	</td>
+	<td class="pdescr" colspan="2" rowspan="2">
+Walka nie zostala uznana.
+dm3 10:40, hipside 70:15. W sumie 80:55 dla OL.<br>
+
+	</td>
+</tr>
+<tr>
+	<td class="blank">
+&nbsp;
+	</td>
+
+</tr>
+<tr>
+	<td width="100" class="player">
+LSD
+	</td>
+	<td width="40"class="player">
+2:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+14 marzec 1998
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+Warlords
+	</td>
+	<td width="40"class="player">
+1:0
+	</td>
+	<td width="160"class="victory">
+VICTORY
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+31 styczen 1998
+	</td>
+</tr>
+<tr>
+	<td width="100" class="player">
+Warlords
+	</td>
+	<td width="40"class="player">
+0:2
+	</td>
+	<td width="160"class="defeat">
+DEFEAT
+	</td>
+
+</tr>
+<tr>
+	<td class="pfield">
+	</td>
+	<td class="pdescr" colspan="2">
+25 styczen 1998
+	</td>
+</tr>
+<tr>
+	<td class="pfield">
+Opis >>
+	</td>
+	<td class="pdescr" colspan="2" rowspan="2">
+Najpierw walczylismy na dm2.
+ Przez wiekszosc czasu gralismy we dwojke przeciwko 3 zawodnikom i przegralismy 42:13. Po spotkaniu zapoznawczym ;) zagralismy na dm6. Przez znaczna czesc walki ciezko bylo znalezc giwerke ;). Pozostal 
+pewien niedosyt, wiec klany niedlugo spotkaja sie ponownie - tym razem na wiekszej mapie tzn. death32c - wtedy pokazemy na co nas stac! ;)<br>
+dm2 42:13 dla WL<br>
+dm6 97:44 dla WL<br>
+Koncowy wynik 139:57 dla WL
+	</td>
+</tr>
+<tr>
+	<td class="blank">
+&nbsp;
+	</td>
+
+</tr>
+</table>
+<br><br>
+
+	</BODY>
+</HTML>
+

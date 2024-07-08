@@ -1,0 +1,10 @@
+BODY
+{
+	margin-left: 0em;
+	margin-top: 0em;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-image: url(gfx/top.jpg);
+	background-position: 0px 0px;
+	overflow:hidden;
+}

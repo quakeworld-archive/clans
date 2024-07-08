@@ -1,0 +1,55 @@
+BODY
+{
+
+	font-family: Verdana, Sans-Serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 16px;
+	color: #81413F;
+	background-repeat: no-repeat;
+	background-color: #301B18;
+	background-image: url(gfx/bg.gif);
+	background-position: 8px 125px;
+	overflow:hidden;
+	
+}
+
+.item
+{
+	color: #BA925F;
+	font-size: 12px;
+}
+
+.date
+{
+	color: #BA925F;
+	font-weight: normal;
+}
+
+.dots
+{
+	color: #BA925F;
+	font-weight: bold;
+}
+.pos
+{
+	color: #83737D;
+}
+
+
+a
+{
+	font-weight: normal;
+	text-decoration: none;
+	color: #678D82;
+}
+
+
+
+a:hover
+{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+}

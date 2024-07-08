@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" href="links.css" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Generator" content="notepad">
+		<meta name="Author" content="Michal Gwozdek - mg@post.pl">
+	</HEAD>
+	<BODY>
+		<div id="staticbuttons" style="position:absolute;">
+			<a href="javascript:" onmouseover="myspeed=-thespeed" onmouseout="myspeed=0"><img src="gfx/up.gif" border="0"></a><br><br><br><br><br>
+			<a href="javascript:" onmouseover="myspeed=thespeed" onmouseout="myspeed=0"><img src="gfx/down.gif" border="0"></a>
+		</div>
+
+		<script>
+			var Hoffset=102
+			var Voffset=160
+			var thespeed=4
+
+			var ieNOTopera=document.all&&navigator.userAgent.indexOf("Opera")==-1
+			var myspeed=0
+
+			var ieHoffset_extra=document.all? 1 : 0
+			var cross_obj=document.all? document.all.staticbuttons : document.getElementById? document.getElementById("staticbuttons") : document.staticbuttons
+
+			function iecompattest()
+			{
+				return (document.compatMode!="BackCompat")? document.documentElement : document.body
+			}
+
+			function positionit()
+			{
+				var dsocleft=document.all? iecompattest().scrollLeft : pageXOffset
+				var dsoctop=document.all? iecompattest().scrollTop : pageYOffset
+				var window_width=ieNOTopera? iecompattest().clientWidth+ieHoffset_extra : window.innerWidth+ieHoffset_extra
+				var window_height=ieNOTopera? iecompattest().clientHeight : window.innerHeight
+
+				if (document.all||document.getElementById)
+				{
+					cross_obj.style.left=parseInt(dsocleft)+parseInt(window_width)-Hoffset+"px"
+					cross_obj.style.top=dsoctop+parseInt(window_height)-Voffset+"px"
+				}
+				else if (document.layers)
+				{
+					cross_obj.left=dsocleft+window_width-Hoffset
+					cross_obj.top=dsoctop+window_height-Voffset
+				}
+			}
+
+			function scrollwindow()
+			{
+				window.scrollBy(0,myspeed)
+			}
+
+			function initializeIT()
+			{
+				positionit()
+				if (myspeed!=0)
+				{
+					scrollwindow()
+				}
+			}
+
+			if (document.all||document.getElementById||document.layers)
+			setInterval("initializeIT()",20)
+
+		</script>
+
+		
+		
+<img src="gfx/links.gif" border="0" align="top"><span class="dots"> :: </span><span class="date"> ostatnia aktualizacja 2004-08-28</span><br><br>
+
+
+<span class="pos">Newsy:</span><br><br>
+
+<a href="http://www.quakeworld.nu/" target="qwnu">www.quakeworld.nu (Najlepszy serwis)</a><br><br>
+
+<span class="pos">Pliki, klienty, tutoriale etc:</span><br><br>
+
+<a href="http://equake.quakeworld.nu/" target="equake22w3">eQuake (Dla poczatkujacych)</a><br>
+<a href="http://no.ammo.at/" target="noammoat">no.ammo.at (Polskie forum!)</a><br>
+
+<a href="http://www.challenge-smackdown.com/qwguide/" target="qwforfres">Quakeworld for Freshies</a><br><br>
+
+<a href="http://www.fuhquake.net/" target="fuhquake">FuhQuake</a><br>
+<a href="http://hem.passagen.se/mjyyk/mqwcl/news.html" target="mqwcl">MQWCL - mirror 1</a><br>
+<a href="http://mqwcl.ru/news.html" target="mqwcl">MQWCL - mirror 2</a><br>
+<a href="http://mqwcl.qhlan.org/" target="mqwcl">MQWCL</a><br><br>
+
+<a href="http://gibbage.mine.nu/" target="tenebrae">gibbage.mine.nu (Skladnica plikow :)</a><br><br>
+
+<a href="http://rxr.quakeworld.nu/ktpro/" target="ktpro">KTeams/Pro</a><br>
+<a href="http://quakeworld.ru/files/vvd/mvdsv/" target="qwextended">MVDSV</a><br><br>
+
+
+<span class="pos">Polskie klany:</span><br><br>
+
+<a href="http://hellpatrol.ctf.pl/" target="ax">Hell Patrol</a><br>
+<a href="http://quake.t15.ds.pwr.wroc.pl" target="eq">PsychoHaloons Crew</a><br>
+<a href="http://damneds.tk/" target="tdmmsd">the damned</a><br>
+<a href="http://hosting.fpp.pl/dos/" target="jwar">Dreadful Offensive Squirrels</a><br>
+<a href="http://klaudia.ehost.pl/tolo/" target="phcc">BOPbI</a><br>
+<a href="http://www.chrclan.republika.pl/" target="tec">Charlatans</a><br><br>
+
+	</BODY>
+</HTML>
+

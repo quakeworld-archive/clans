@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" href="events.css" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Generator" content="notepad">
+		<meta name="Author" content="Michal Gwozdek - mg@post.pl">
+	</HEAD>
+	<BODY>
+		<div id="staticbuttons" style="position:absolute;">
+			<a href="javascript:" onmouseover="myspeed=-thespeed" onmouseout="myspeed=0"><span class="nav"><img src="gfx/up.gif" border="0"></span></a><br><br><br><br><br>
+			<a href="javascript:" onmouseover="myspeed=thespeed" onmouseout="myspeed=0"><span class="nav"><img src="gfx/down.gif" border="0"></span></a>
+		</div>
+
+		<script>
+			var Hoffset=102
+			var Voffset=160
+			var thespeed=4
+
+			var ieNOTopera=document.all&&navigator.userAgent.indexOf("Opera")==-1
+			var myspeed=0
+
+			var ieHoffset_extra=document.all? 1 : 0
+			var cross_obj=document.all? document.all.staticbuttons : document.getElementById? document.getElementById("staticbuttons") : document.staticbuttons
+
+			function iecompattest()
+			{
+				return (document.compatMode!="BackCompat")? document.documentElement : document.body
+			}
+
+			function positionit()
+			{
+				var dsocleft=document.all? iecompattest().scrollLeft : pageXOffset
+				var dsoctop=document.all? iecompattest().scrollTop : pageYOffset
+				var window_width=ieNOTopera? iecompattest().clientWidth+ieHoffset_extra : window.innerWidth+ieHoffset_extra
+				var window_height=ieNOTopera? iecompattest().clientHeight : window.innerHeight
+
+				if (document.all||document.getElementById)
+				{
+					cross_obj.style.left=parseInt(dsocleft)+parseInt(window_width)-Hoffset+"px"
+					cross_obj.style.top=dsoctop+parseInt(window_height)-Voffset+"px"
+				}
+				else if (document.layers)
+				{
+					cross_obj.left=dsocleft+window_width-Hoffset
+					cross_obj.top=dsoctop+window_height-Voffset
+				}
+			}
+
+			function scrollwindow()
+			{
+				window.scrollBy(0,myspeed)
+			}
+
+			function initializeIT()
+			{
+				positionit()
+				if (myspeed!=0)
+				{
+					scrollwindow()
+				}
+			}
+
+			if (document.all||document.getElementById||document.layers)
+			setInterval("initializeIT()",20)
+
+		</script>
+
+		
+<img src="gfx/events.gif" border="0" align="top"><br><br>
+		<table border="0" cellpadding="4" cellspacing="4" width="300">
+
+
+		<tr>
+			<td class="event">
+				2004-08-28 :: ShoTTboTT
+			</td>
+
+		</tr>
+		<tr>
+			<td class="pdescr">
+Po kilkuletniej przerwie postanowilismy reaktywowac nasza druzyne! Chwilowo w dziale members jestem tylko ja i Tigre - reszta ekipy zostanie uzupelniona juz wkrotce. Wszystko wskazuje na to, ze powroci znaczna wiekszosc graczy z ostatniego skladu. Prawdopodobnie bedzie wsrod nich Infinite - jak tylko naprawi komputer, ktory w czasie burzy ulegl awarii. <br><br>Mamy tez nowe WWW. Byc moze ktos z Was zauwazyl, ze jest to przerobiona strona nieistniejacego juz klanu PHR3, ktory probowalem utworzyc w zeszlym roku. <br><br>Uruchomilismy tez <a href="http://butik.pl/olejto" target="sklepolteam">sklep</a> z firmowymi gadzetami ;) Zapraszamy rowniez do sciagniecia malego zestawu <a href="walki.zip" target="walkizip">screenshotow</a> z kilku walk klanowych, rozegranych przez nas szesc lat temu.
+			</td>
+		</t.>
+		<tr>
+			<td class="event">
+				2000-07-17 :: Tigre
+			</td>
+
+		</tr>
+		<tr>
+			<td class="pdescr">
+				Aktualizacja strony. Zmienilem jej charakter na bardziej informacyjny. Mozna tu znalezc adresy polskich serwerow Quake'a I, dane o kafejkach internetowych na terenie Olsztyna (okolo 15), konfigi, sciagnac pliki uzyteczne do grania a takze uzyskac informacje o naszej druzynie. Milego surfowania.
+			</td>
+		</tr>
+		<tr>
+			<td class="event">
+				2000-06-10 :: Tigre
+			</td>
+
+		</tr>
+		<tr>
+			<td class="pdescr">
+				Do klanu dochodzi Inexector z klanu K3. Rowniez trenuje z nami bardzo dobry gracz Quake'a III. Obecny sklad: Tigre, God, Boxer, Inexector, Blaster.
+			</td>
+		</tr>
+		<tr>
+			<td class="event">
+				2000-06-01 :: Tigre
+			</td>
+
+		</tr>
+		<tr>
+			<td class="pdescr">
+				Infinite przestal grac w Quake'a I i odchodzi z OL. Gral prawie w kazdym meczu ligi 99/00.<br>
+			</td>
+		</tr>
+		<tr>
+			<td class="event">
+				2000-05-20 :: Tigre
+			</td>
+
+		</tr>
+		<tr>
+			<td class="pdescr">
+				Zajelismy piate miejsce w ogolnopolskiej lidze Quake'a I. W sumie bralo w niej udzial 14 druzyn. Na razie nie wiadomo kiedy odbeda sie finaly dla 4 najlepszych klanow: FX, BAD, D2 oraz TEC.<br><br>
+			</td>
+		</tr>
+</table>
+
+	</BODY>
+</HTML>
+
