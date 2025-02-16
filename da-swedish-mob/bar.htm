@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <TITLE></TITLE>
+   <META NAME="GENERATOR" CONTENT="Mozilla/3.0Gold (Win95; I) [Netscape]">
+</HEAD>
+<P><SCRIPT LANGUAGE="javascript">
+
+var version="n3";
+
+if (version == "n3")
+             {
+
+             mobs_off = new Image;
+             mobs_off.src = "1mobs.JPG";
+             mobs_on = new Image;
+             mobs_on.src = "2mobs.JPG";
+             main_off = new Image;
+             main_off.src = "1main.JPG";
+             main_on = new Image;
+             main_on.src = "2main.JPG";
+             batt_off = new Image;
+             batt_off.src = "1batt.JPG";
+	     batt_on = new Image;
+             batt_on.src = "2batt.JPG";
+	     chall_off = new Image;
+             chall_off.src = "1chall.JPG";
+             chall_on = new Image;
+             chall_on.src = "2chall.JPG";
+             serv_off = new Image;
+             serv_off.src = "1serv.JPG";
+             serv_on = new Image;
+             serv_on.src = "2serv.JPG";
+             down_off = new Image;
+             down_off.src = "1down.JPG";
+             down_on = new Image;
+             down_on.src = "2down.JPG";
+	     join_off = new Image;
+             join_off.src = "1join.JPG";
+             join_on = new Image;
+             join_on.src = "2join.JPG";
+             links_off = new Image;
+             links_off.src = "1link.JPG";
+	     links_on = new Image;
+             links_on.src = "2link.JPG";
+	     }
+
+function img_act(imgName)                       // active item
+     {
+             if (version == "n3") 
+             {
+             imgOn = eval(imgName + "on.src");
+             document [imgName].src = imgOn;
+             }
+     }
+
+     function img_inact(imgName)                // inactive item
+     {
+             if (version == "n3") 
+             {
+             imgOff = eval(imgName + "off.src");
+             document [imgName].src = imgOff;
+             }
+     }
+
+// deactivate cloak --></SCRIPT></P>
+
+<BODY TEXT="#FF0000" BGCOLOR="#000000" LINK="#FF0000" VLINK="#FFFF00" ALINK="#FFFF00" leftmargin="0" topmargin="0">
+
+<A HREF="mainpage.htm" onMouseOver="img_act('main_')" onMouseOut="img_inact('main_')";return true" target="mainpage"><IMG SRC="1main.JPG" NAME="main_" BORDER=0 HEIGHT=33 WIDTH=129></A>
+
+<A HREF="brag.htm" onMouseOver="img_act('batt_')" onMouseOut="img_inact('batt_');return true" target="mainpage""><IMG SRC="1batt.JPG" NAME="batt_" BORDER=0 HEIGHT=33 WIDTH=129></A>
+
+<A HREF="http://www.sdf.sbacka.pitea.se/mobsterdalen/" onMouseOver="img_act('serv_')" onMouseOut="img_inact('serv_')" target="_top"><IMG SRC="1serv.JPG" NAME="serv_" BORDER=0 HEIGHT=33 WIDTH=129></A>
+
+<A HREF="challeng.htm" onMouseOver="img_act('chall_')" onMouseOut="img_inact('chall_');return true" target="mainpage""><IMG SRC="1chall.JPG" NAME="chall_" BORDER=0 HEIGHT=33 WIDTH=129></A>
+
+<A HREF="mobsters.htm" onMouseOver="img_act('mobs_')" onMouseOut="img_inact('mobs_')" ;return true" target="mainpage"><IMG SRC="1mobs.JPG" NAME="mobs_" BORDER=0 HEIGHT=33 WIDTH=129></A>
+
+<A HREF="download.htm" onMouseOver="img_act('down_')" onMouseOut="img_inact('down_')";return true" target="mainpage"><IMG SRC="1down.JPG" NAME="down_" BORDER=0 HEIGHT=33 WIDTH=129></A>
+
+<A HREF="join.htm" onMouseOver="img_act('join_')" onMouseOut="img_inact('join_')";return true" target="mainpage"><IMG SRC="1join.JPG" NAME="join_" BORDER=0 HEIGHT=33 WIDTH=129></A>
+
+<A HREF="links.htm" onMouseOver="img_act('links_')" onMouseOut="img_inact('links_')";return true" target="mainpage"><IMG SRC="1link.JPG" NAME="links_" BORDER=0 HEIGHT=33 WIDTH=129></A>
+
+<BR><BR><CENTER>
+<CENTER><FONT FACE="arial"><FONT SIZE=-1><FONT COLOR="#FFFF00">You Are<BR>Quaker<BR>Number:</FONT><BR><BR>
+<A HREF="http://www.fxweb.holowww.com/v2-openstat.cgi?userid=C61039&password2=public&show=DHG" target="_top"><IMG src="http://www.fxweb.holowww.com/v2-trackrun.cgi?userid=C61039&boost=5100" height="31" width="88" BORDER=0></A>
+<BR><BR><CENTER><FONT FACE="arial"><FONT SIZE=-1><FONT COLOR="#FFFF00">Visiting<BR>Da Mob</FONT><BR><BR>
+
+</BODY>
+</HTML>

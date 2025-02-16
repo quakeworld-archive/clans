@@ -6,6 +6,7 @@ Contact **XantoM** at Quake.World discord if you have content to share.
 
 ## Clans
 
+* [Da Swedish Mob](https://archive.quake.world/clans/da-swedish-mob/) (1997)
 * [Fragomatic](https://archive.quake.world/clans/fragomatic/) (2005)
 * [hippushnik](https://archive.quake.world/clans/hippushnik/) (2005)
 * [Hyphen](https://archive.quake.world/clans/hyphen/hyphen.txt) (2005)
